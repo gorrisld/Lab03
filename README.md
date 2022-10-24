@@ -26,14 +26,14 @@ Run the code in the debugger to be able to help explain the difference if needed
 This will mean you need to modify the CMakeLists.txt file.  
 
 The rules are:
-1.	Each player must end their turn with 5 or fewer cards in their hand.
-2.	At the start of their turn, they must draw a card from the top of the community pile of cards 
-3.	The player then tries to make a stack from their hand in order from 1 to 13 during their turn.  (think solitiare like, first place the ace, then the two, and then three.  Except we don't care about the suit).
-4.	During their turn, the player may draw additional cards from the top of the pile so long as the total cards in their hand don’t exceed 6.
-5.	When the player cannot place any more cards in their stack and they have 6 cards in their hand, they must discard 1 card to the bottom of the community pile and then player  goes.
-6.	A player may choose to discard all of their cards to the bottom of the community pile and start with 5 new cards at the beginning of their turn.  This action ends their turn without them getting a chance to draw a 6th card or discard any cards to their stack.
-7.	The game is played with a standard playing card deck (Ace = 1, Jack = 11, Queen =12, King = 13).  The suits are not important for the purposes of determining rule 3 (i.e. a 4 of any suit can go on top of a 3 of any suit).
-8. The Game ends when someone has a stack with 13 cards in it.
+1. Each Player starts with 5 cards in their hand
+2. Player one plays first. When it is you turn a player can:
+    a. start their win stack with a one/ace
+    b. discard a card
+    c. add to their win stack with the next highest number
+    d. draw a card
+3. A player's turn ends when they draw a card. A player can only have no more than 5 cards at any given time, and must have 5 cards when their turn is over.
+4. The game ends when a player completes their stack with all cards (ace-king or 1-13).
 
 ## Task 2  Create a Unit Test library to test the classes for the two implementations.
 Write and have pass at least 3 tests per class (3 classes, so so min of 9 UnitTests per each implementation).  These tests do not have to be super complicated, but this is where you want to think about your corner cases.
